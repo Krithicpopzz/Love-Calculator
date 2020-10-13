@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="" href="javascript.js">
+    <title>Love Calculator</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Love Calculator</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form accept-charset="UTF-8" role="form">
+                            <fieldset>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Boy Name" name="email" type="text"
+                                        value="">
+                                </div>
+                                <div class="form-group">
+                                    <input class="form-control" placeholder="Girl Name" name="password" type="text"
+                                        value="">
+                                </div>
+                                <!-- <div class="checkbox">
+                                    <label>
+                                        <input name="remember" type="checkbox" value="Remember Me"> Remember Me
+                                    </label>
+                                </div> -->
+                                <input class="btn btn-lg btn-success btn-block" type="button" onclick="loveCalculator()"
+                                    value="Check">
+                            </fieldset>
+                        </form>
+                        <hr />
+                        <center>
+                            <h4>OR</h4>
+                        </center>
+                        <input class="btn btn-lg btn-facebook btn-block" type="button" onclick="lovCalcu()"
+                            value="Leave it if you are Single">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+<script>
+    function loveCalculator() {
+        var loveCalc = Math.random();
+        loveCalc = Math.floor((loveCalc * 100) + 1);
+        if (loveCalc > 70) {
+            alert("Your love score is " + loveCalc + "%" + " you both lucky pair❤❤❤!");
+        } else{
+            alert("Your love score is " + loveCalc + "%");
+        }
+    }
+    function lovCalcu(){
+        alert("Don't worry one who is waiting for you Never lose hope❤👍😜");
+    }
+
+</script>
